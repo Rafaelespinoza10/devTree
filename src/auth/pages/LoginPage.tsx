@@ -22,7 +22,7 @@ export const LoginPage = () => {
       toast.success('Iniciando Sesion en DevTree');
       navigate('/admin');
 
-    } catch (error) {
+    } catch (error: any) {
       toast.error(`${error.response.data.message}`);
 
     }

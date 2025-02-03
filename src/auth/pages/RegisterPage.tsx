@@ -15,7 +15,7 @@ export const RegisterPage = () => {
        await api.post(`/auth/register`, data);
       toast.success('Usuario registrado en DevTree')      
       
-    } catch (error) {
+    } catch (error: any) {
       toast.error(`${error.response.data.message}`)
     }
   }
